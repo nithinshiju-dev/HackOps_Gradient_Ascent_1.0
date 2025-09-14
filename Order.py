@@ -7,9 +7,9 @@ def get_order_and_customer_details(order_id: int):
     try:
         mydb = mysql.connector.connect(
             host="localhost",
-            user="root",
-            password="Password!123",
-            database="OrderManagement"
+            user="",
+            password="",
+            database=""
         )
 
         cursor = mydb.cursor(dictionary=True)
@@ -38,3 +38,4 @@ def get_order_and_customer_details(order_id: int):
             cursor.close()
         if 'mydb' in locals() and mydb.is_connected():
             mydb.close()
+
