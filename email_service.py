@@ -6,7 +6,7 @@ from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 
-SCOPES = ['https://www.googleapis.com/auth/gmail.modify']
+SCOPES = ['']
 
 def authenticate_gmail():
     creds = None
@@ -80,4 +80,5 @@ def poll_gmail():
         print("No unread email found.")
 
 if __name__ == '__main__':
+
     poll_gmail()
