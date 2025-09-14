@@ -14,7 +14,7 @@ load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 # Load and split PDF
-pdf_path = r"C:\Nithin\Hackathon\Gradient Accent\crewproject\skupolicy.pdf"
+pdf_path = r""
 loader = PyPDFLoader(pdf_path)
 documents = loader.load()
 text_splitter = CharacterTextSplitter(chunk_size=500, chunk_overlap=100)
@@ -133,4 +133,5 @@ if __name__ == "__main__":
         days_since_purchase=15
     )
     print("\n Final Decision from Policy Agent:")
+
     print(result)
