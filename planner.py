@@ -7,7 +7,7 @@ from Order import get_order_and_customer_details  # Custom tool
 from planner_agent import process_email_with_planner
 
 # Load environment variables
-dotenv_path = r"C:\Nithin\Hackathon\Gradient Accent\crewproject\.env"
+dotenv_path = r""
 load_dotenv(dotenv_path)
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
@@ -152,3 +152,4 @@ if __name__ == "__main__":
     """
 
     process_email_with_planner(sample_email, sender_email="customer@example.com")
+
